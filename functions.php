@@ -17,4 +17,9 @@
         ));
     }
     add_action( 'after_setup_theme', 'independent_publisher_child_setup' );
+
+    /**
+    * Load this Child theme's template tags.
+    */
+    require get_stylesheet_directory() . '/inc/child-template-tags.php';
 ?>
